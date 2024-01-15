@@ -11,5 +11,4 @@ public class AdventureUtils {
             return false;
         }
     }
-
 }
