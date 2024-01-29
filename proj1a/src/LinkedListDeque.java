@@ -1,6 +1,16 @@
 import java.util.List;
 
 public class LinkedListDeque<T> implements Deque<T> {
+    public class Node {
+        public int item;
+        public Node next;
+        public Node before;
+        public Node(int i, Node n, Node b) {
+            item = i;
+            next = n;
+            before = b;
+        }
+    }
     @Override
     public void addFirst(T x) {
 
@@ -45,8 +55,7 @@ public class LinkedListDeque<T> implements Deque<T> {
     public T getRecursive(int index) {
         return null;
     }
-
     public LinkedListDeque() {
+        
     }
 }
-
